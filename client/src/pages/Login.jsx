@@ -68,6 +68,7 @@ const Login = () => {
           <Input
             label="Password"
             type="password"
+            showPasswordToggle
             required
             value={form.password}
             error={errors.password}

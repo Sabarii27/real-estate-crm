@@ -67,6 +67,7 @@ const UserFormModal = ({ show, onClose, onSubmit, initial }) => {
         <Input
           label={initial ? 'New password (leave blank to keep current)' : 'Password'}
           type="password"
+          showPasswordToggle
           required={!initial}
           value={form.password}
           error={errors.password}

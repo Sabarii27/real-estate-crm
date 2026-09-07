@@ -847,6 +847,39 @@ a:hover {
   box-shadow: 0 0 0 0.2rem rgba(255, 118, 93, 0.16);
 }
 
+.input-password-wrap {
+  position: relative;
+}
+
+.input-password-wrap .input-password {
+  padding-right: 2.8rem;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 0.65rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--slate-500);
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.password-toggle:hover,
+.password-toggle:focus-visible {
+  background: var(--brass-100);
+  color: var(--brass-dark);
+  outline: none;
+}
+
 .auth-page {
   background: var(--ink-900);
   background-image: radial-gradient(circle at 80% 15%, rgba(255, 118, 93, 0.18), transparent 30%), radial-gradient(circle at 10% 90%, rgba(255, 250, 243, 0.07), transparent 28%);

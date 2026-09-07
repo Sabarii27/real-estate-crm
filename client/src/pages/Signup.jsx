@@ -65,10 +65,11 @@ const Signup = () => {
         <form onSubmit={handleSubmit} noValidate>
           <Input label="Full name" type="text" required value={form.name} error={errors.name} onChange={updateField('name')} />
           <Input label="Email address" type="email" required value={form.email} error={errors.email} onChange={updateField('email')} />
-          <Input label="Password" type="password" required value={form.password} error={errors.password} onChange={updateField('password')} />
+          <Input label="Password" type="password" showPasswordToggle required value={form.password} error={errors.password} onChange={updateField('password')} />
           <Input
             label="Confirm password"
             type="password"
+            showPasswordToggle
             required
             value={form.confirmPassword}
             error={errors.confirmPassword}
